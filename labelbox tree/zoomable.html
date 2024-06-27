@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Tree with Zoom and Interaction</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        .node circle {
+            fill: #fff;
+            stroke: steelblue;
+            stroke-width: 3px;
+        }
+
+        .node text {
+            font: 12px sans-serif;
+        }
+
+        .link {
+            fill: none;
+            stroke: #ccc;
+            stroke-width: 2px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Set the dimensions and margins of the diagram
+        var margin = {top: 100, right: 100, bottom: 100, left: 100},
+            width = window.innerWidth - margin.left - margin.right,
+            height = window.innerHeight - margin.top - margin.bottom;
+
+        // Append the svg object to the body of the page
+        var svg = d3.select("body").append("svg")
+            .attr("width", window.innerWidth)
+            .attr("height", window.innerHeight)
+            .call(d3.zoom().on("zoom", function (event) {
+                svg.attr("transform", event.transform);
+            }))
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        // Load the external data
+        d3.json("transformed_label_tree.json").then(function(data) {
+            var root = d3.hierarchy(data);
+
+            // TODO: Adjust the spacing between nodes
+            var treeLayout = d3.tree()
+                .size([height, width])
+                .separation(function(a, b) {
+                    // If nodes are at the same depth and share the same parent, increase the spacing
+                    if (a.parent === b.parent) {
+                        return 250; // Large spacing between siblings
+                    }
+                    // If nodes are at the same depth but different parents, use a default spacing
+                    else if (a.depth === b.depth) {
+                        return 500; // Default spacing for same-depth nodes with different parents
+                    }
+                    // Increase spacing based on depth for nodes at different depths
+                    return (a.depth + b.depth) / 2;
+                 });
+
+            treeLayout(root);
+
+            // Adds the links between the nodes
+            svg.selectAll('.link')
+                .data(root.links())
+                .enter().append('path')
+                .attr('class', 'link')
+                .attr('d', d3.linkHorizontal()
+                    .x(function(d) { return d.y; })
+                    .y(function(d) { return d.x; }));
+
+            // Adds each node as a group
+            var node = svg.selectAll('.node')
+                .data(root.descendants())
+                .enter().append('g')
+                .attr('class', 'node')
+                .attr('transform', function(d) { return 'translate(' + d.y + ',' + d.x + ')'; });
+
+            // Add circles for the nodes
+            node.append('circle')
+                .attr('r', 10)
+                .on("click", click);
+
+            // Add labels for the nodes
+            node.append('text')
+                .attr('dy', '.35em')
+                .attr('x', function(d) { return d.children ? -13 : 13; })
+                .style('text-anchor', function(d) { return d.children ? 'end' : 'start'; })
+                .text(function(d) { return d.data.name; });
+
+            // Function to center and zoom on a node
+            function centerNode(source) {
+                var t = d3.zoomTransform(svg.node());
+                var x = -source.y0;
+                var y = -source.x0;
+                x = x * t.k + width / 2;
+                y = y * t.k + height / 2;
+                svg.transition()
+                    .duration(750)
+                    .call(d3.zoom().transform, d3.zoomIdentity.translate(x, y).scale(t.k));
+            }
+
+            // Toggle children on click.
+            function click(event, d) {
+                if (d.children) {
+                    d._children = d.children;
+                    d.children = null;
+                } else {
+                    d.children = d._children;
+                    d._children = null;
+                }
+                update(d);
+            }
+
+            function update(source) {
+                // Recompute the layout and data joins
+                var nodes = root.descendants(),
+                    links = root.links();
+
+                treeLayout(root);
+
+                // Update the nodes…
+                var node = svg.selectAll(".node")
+                    .data(nodes, function(d) { return d.id || (d.id = ++i); });
+
+                // Enter any new nodes at the parent's previous position.
+                var nodeEnter = node.enter().append("g")
+                    .attr("class", "node")
+                    .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
+                    .on("click", click);
+
+                nodeEnter.append("circle")
+                    .attr("r", 10)
+                    .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+                nodeEnter.append("text")
+                    .attr("dy", ".35em")
+                    .attr("x", function(d) { return d.children || d._children ? -13 : 13; })
+                    .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
+                    .text(function(d) { return d.data.name; });
+
+                // Transition nodes to their new position.
+                var nodeUpdate = nodeEnter.merge(node);
+
+                nodeUpdate.transition()
+                    .duration(750)
+                    .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
+
+                nodeUpdate.select("circle")
+                    .attr("r", 10)
+                    .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+                nodeUpdate.select("text")
+                    .style("fill-opacity", 1);
+
+                // Transition exiting nodes to the parent's new position.
+                var nodeExit = node.exit().transition()
+                    .duration(750)
+                    .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
+                    .remove();
+
+                nodeExit.select("circle")
+                    .attr("r", 1e-6);
+
+                nodeExit.select("text")
+                    .style("fill-opacity", 1e-6);
+
+                // Update the links…
+                var link = svg.selectAll(".link")
+                    .data(links, function(d) { return d.target.id; });
+
+                // Enter any new links at the parent's previous position.
+                var linkEnter = link.enter().insert("path", "g")
+                    .attr("class", "link")
+                    .attr("d", function(d) {
+                        var o = {x: source.x0, y: source.y0};
+                        return diagonal({source: o, target: o});
+                    });
+
+                // Transition links to their new position.
+                linkEnter.merge(link).transition()
+                    .duration(750)
+                    .attr("d", diagonal);
+
+                // Transition exiting nodes to the parent's new position.
+                link.exit().transition()
+                    .duration(750)
+                    .attr("d", function(d) {
+                        var o = {x: source.x, y: source.y};
+                        return diagonal({source: o, target: o});
+                    })
+                    .remove();
+
+                // Stash the old positions for transition.
+                nodes.forEach(function(d) {
+                    d.x0 = d.x;
+                    d.y0 = d.y;
+                });
+            }
+
+            // Collapse after the second level
+            root.children.forEach(collapse);
+
+            update(root);
+
+            function collapse(d) {
+                if (d.children) {
+                    d._children = d.children;
+                    d._children.forEach(collapse);
+                    d.children = null;
+                }
+            }
+        });
+
+        function diagonal(d) {
+            return "M" + d.source.y + "," + d.source.x
+                + "C" + (d.source.y + d.target.y) / 2 + "," + d.source.x
+                + " " + (d.source.y + d.target.y) / 2 + "," + d.target.x
+                + " " + d.target.y + "," + d.target.x;
+        }
+    </script>
+</body>
+</html>

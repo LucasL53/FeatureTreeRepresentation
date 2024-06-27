@@ -1,0 +1,526 @@
+{
+  "name": "Root",
+  "children": [
+    {
+      "name": "Image",
+      "children": [
+        {
+          "name": "region_type",
+          "children": [
+            {
+              "name": "foreground",
+              "children": []
+            },
+            {
+              "name": "background",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "shape",
+          "children": [
+            {
+              "name": "circle",
+              "children": []
+            },
+            {
+              "name": "rectangle",
+              "children": []
+            },
+            {
+              "name": "borderless",
+              "children": []
+            },
+            {
+              "name": "custom",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "color",
+          "children": [
+            {
+              "name": "rgb",
+              "children": []
+            },
+            {
+              "name": "grayscale",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "content",
+          "children": [
+            {
+              "name": "text",
+              "children": []
+            },
+            {
+              "name": "realism",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "profile_photo",
+                      "children": []
+                    },
+                    {
+                      "name": "logo",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "template_placeholder",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "profile_photo",
+                      "children": []
+                    },
+                    {
+                      "name": "x",
+                      "children": []
+                    },
+                    {
+                      "name": "mountain_sun",
+                      "children": []
+                    },
+                    {
+                      "name": "custom",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "representative",
+                              "children": []
+                            },
+                            {
+                              "name": "abstract",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Text",
+      "children": [
+        {
+          "name": "style",
+          "children": [
+            {
+              "name": "line",
+              "children": []
+            },
+            {
+              "name": "squiggly_line",
+              "children": []
+            },
+            {
+              "name": "literals",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "font_style",
+          "children": []
+        },
+        {
+          "name": "font_size",
+          "children": [
+            {
+              "name": "small",
+              "children": []
+            },
+            {
+              "name": "medium",
+              "children": []
+            },
+            {
+              "name": "large",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "text_alignment",
+          "children": [
+            {
+              "name": "left",
+              "children": []
+            },
+            {
+              "name": "center",
+              "children": []
+            },
+            {
+              "name": "right",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "text_style",
+          "children": [
+            {
+              "name": "bold",
+              "children": []
+            },
+            {
+              "name": "italicized",
+              "children": []
+            },
+            {
+              "name": "underlined",
+              "children": []
+            },
+            {
+              "name": "strike",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dropdown",
+      "children": [
+        {
+          "name": "content",
+          "children": [
+            {
+              "name": "selected",
+              "children": []
+            },
+            {
+              "name": "not_selected",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "selection",
+          "children": [
+            {
+              "name": "single_select",
+              "children": []
+            },
+            {
+              "name": "multi_select",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "shape",
+          "children": [
+            {
+              "name": "rectangle",
+              "children": []
+            },
+            {
+              "name": "rounded_rectangle",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "dropdown_state",
+          "children": [
+            {
+              "name": "dropdown_visible",
+              "children": []
+            },
+            {
+              "name": "hidden",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Paragraph",
+      "children": [
+        {
+          "name": "drawing_style",
+          "children": [
+            {
+              "name": "line",
+              "children": []
+            },
+            {
+              "name": "squiggly_line",
+              "children": []
+            },
+            {
+              "name": "literals",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "children": []
+    },
+    {
+      "name": "List",
+      "children": []
+    },
+    {
+      "name": "Stepper",
+      "children": []
+    },
+    {
+      "name": "Date Picker",
+      "children": []
+    },
+    {
+      "name": "Text Input",
+      "children": [
+        {
+          "name": "input_size",
+          "children": [
+            {
+              "name": "single_line_input",
+              "children": []
+            },
+            {
+              "name": "multi_line_input",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "input_category",
+          "children": [
+            {
+              "name": "authentication",
+              "children": []
+            },
+            {
+              "name": "search_queries",
+              "children": []
+            },
+            {
+              "name": "payment_information",
+              "children": []
+            },
+            {
+              "name": "general_input",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Radio Button",
+      "children": []
+    },
+    {
+      "name": "Button",
+      "children": [
+        {
+          "name": "button_type",
+          "children": [
+            {
+              "name": "primary",
+              "children": []
+            },
+            {
+              "name": "secondary",
+              "children": []
+            },
+            {
+              "name": "tertiary",
+              "children": []
+            },
+            {
+              "name": "icon",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "button_shape",
+          "children": [
+            {
+              "name": "rounded_rectangle",
+              "children": []
+            },
+            {
+              "name": "rectangle",
+              "children": []
+            },
+            {
+              "name": "circle",
+              "children": []
+            },
+            {
+              "name": "custom",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "size",
+          "children": [
+            {
+              "name": "small",
+              "children": []
+            },
+            {
+              "name": "medium",
+              "children": []
+            },
+            {
+              "name": "large",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "state",
+          "children": [
+            {
+              "name": "default",
+              "children": []
+            },
+            {
+              "name": "disabled",
+              "children": []
+            },
+            {
+              "name": "hover",
+              "children": []
+            },
+            {
+              "name": "active_pressed",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Icon",
+      "children": [
+        {
+          "name": "type",
+          "children": [
+            {
+              "name": "action_icon",
+              "children": []
+            },
+            {
+              "name": "object_icon",
+              "children": []
+            },
+            {
+              "name": "status_icon",
+              "children": []
+            },
+            {
+              "name": "navigation_icon",
+              "children": []
+            },
+            {
+              "name": "other",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "size",
+          "children": [
+            {
+              "name": "small",
+              "children": []
+            },
+            {
+              "name": "medium",
+              "children": []
+            },
+            {
+              "name": "large",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "color",
+          "children": [
+            {
+              "name": "representative",
+              "children": []
+            },
+            {
+              "name": "monochromatic",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Checkbox",
+      "children": []
+    },
+    {
+      "name": "Container",
+      "children": [
+        {
+          "name": "representation",
+          "children": [
+            {
+              "name": "card",
+              "children": []
+            },
+            {
+              "name": "line_break",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rating",
+      "children": []
+    },
+    {
+      "name": "Table",
+      "children": []
+    },
+    {
+      "name": "Slider",
+      "children": []
+    },
+    {
+      "name": "Toggle",
+      "children": []
+    }
+  ]
+}
