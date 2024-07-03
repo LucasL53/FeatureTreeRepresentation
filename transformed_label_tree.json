@@ -117,6 +117,19 @@
               ]
             }
           ]
+        },
+        {
+          "name": "testing",
+          "children": [
+            {
+              "name": "a",
+              "children": []
+            },
+            {
+              "name": "b",
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -277,6 +290,44 @@
               "children": []
             }
           ]
+        },
+        {
+          "name": "border",
+          "children": [
+            {
+              "name": "not_present",
+              "children": []
+            },
+            {
+              "name": "solid_thin",
+              "children": []
+            },
+            {
+              "name": "solid_bold",
+              "children": []
+            },
+            {
+              "name": "dashed",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "text_alignment",
+          "children": [
+            {
+              "name": "left",
+              "children": []
+            },
+            {
+              "name": "center",
+              "children": []
+            },
+            {
+              "name": "right",
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -329,6 +380,58 @@
             },
             {
               "name": "general_input",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "hint_text",
+          "children": [
+            {
+              "name": "present",
+              "children": []
+            },
+            {
+              "name": "not_present",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "shape",
+          "children": [
+            {
+              "name": "rounded_square",
+              "children": []
+            },
+            {
+              "name": "sharp_square",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "resizable",
+          "children": [
+            {
+              "name": "true",
+              "children": []
+            },
+            {
+              "name": "false",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "leading_icon",
+          "children": [
+            {
+              "name": "present",
+              "children": []
+            },
+            {
+              "name": "not_present",
               "children": []
             }
           ]

@@ -1,7 +1,7 @@
 import json
 
 # Load the JSON data from the file
-with open('label-tree.json', 'r') as file:
+with open('labelbox tree/label-tree.json', 'r') as file:
     data = json.load(file)
 
 # Function to transform the JSON data
