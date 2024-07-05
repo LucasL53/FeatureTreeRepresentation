@@ -341,7 +341,97 @@
     },
     {
       "name": "Stepper",
-      "children": []
+      "children": [
+        {
+          "name": "state",
+          "children": [
+            {
+              "name": "unstarted",
+              "children": []
+            },
+            {
+              "name": "partial",
+              "children": []
+            },
+            {
+              "name": "complete",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "step_break",
+          "children": [
+            {
+              "name": "line",
+              "children": []
+            },
+            {
+              "name": "continuous",
+              "children": []
+            },
+            {
+              "name": "dashed_line",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "label",
+          "children": [
+            {
+              "name": "contained",
+              "children": []
+            },
+            {
+              "name": "above",
+              "children": []
+            },
+            {
+              "name": "below",
+              "children": []
+            },
+            {
+              "name": "not_present",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "shape",
+          "children": [
+            {
+              "name": "circle",
+              "children": []
+            },
+            {
+              "name": "square",
+              "children": []
+            },
+            {
+              "name": "rounded_square",
+              "children": []
+            },
+            {
+              "name": "arrow",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "orientation",
+          "children": [
+            {
+              "name": "vertical",
+              "children": []
+            },
+            {
+              "name": "horizontal",
+              "children": []
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Date Picker",
@@ -615,7 +705,17 @@
     },
     {
       "name": "Table",
-      "children": []
+      "children": [
+        {
+          "name": "1",
+          "children": [
+            {
+              "name": "1",
+              "children": []
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Slider",
