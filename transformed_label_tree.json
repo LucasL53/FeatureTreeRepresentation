@@ -337,7 +337,25 @@
     },
     {
       "name": "List",
-      "children": []
+      "children": [
+        {
+          "name": "style",
+          "children": [
+            {
+              "name": "bulleted_list",
+              "children": []
+            },
+            {
+              "name": "numbered_list",
+              "children": []
+            },
+            {
+              "name": "pure_text",
+              "children": []
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Stepper",
@@ -530,7 +548,21 @@
     },
     {
       "name": "Radio Button",
-      "children": []
+      "children": [
+        {
+          "name": "type",
+          "children": [
+            {
+              "name": "filled_or_not_circle",
+              "children": []
+            },
+            {
+              "name": "text_with_description",
+              "children": []
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Button",
@@ -636,10 +668,6 @@
               "children": []
             },
             {
-              "name": "navigation_icon",
-              "children": []
-            },
-            {
               "name": "other",
               "children": []
             }
@@ -712,6 +740,10 @@
             {
               "name": "1",
               "children": []
+            },
+            {
+              "name": "table_like_text",
+              "children": []
             }
           ]
         }
@@ -719,11 +751,47 @@
     },
     {
       "name": "Slider",
-      "children": []
+      "children": [
+        {
+          "name": "sldier_type",
+          "children": [
+            {
+              "name": "page_slider",
+              "children": []
+            },
+            {
+              "name": "progress_slider",
+              "children": []
+            },
+            {
+              "name": "input_slider",
+              "children": []
+            },
+            {
+              "name": "range_slider",
+              "children": []
+            },
+            {
+              "name": "other",
+              "children": []
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Toggle",
-      "children": []
+      "children": [
+        {
+          "name": "figure",
+          "children": [
+            {
+              "name": "toggle_button",
+              "children": []
+            }
+          ]
+        }
+      ]
     }
   ]
 }

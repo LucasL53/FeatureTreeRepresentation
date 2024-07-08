@@ -754,7 +754,45 @@
       "tool": "rectangle",
       "color": "#b1afae",
       "archived": 0,
-      "classifications": [],
+      "classifications": [
+       {
+        "schemaNodeId": "cly97nblb08kd07476u84f6qp",
+        "featureSchemaId": "cly97nblb08k607473vnocbvi",
+        "archived": 0,
+        "required": false,
+        "instructions": "Style",
+        "name": "style",
+        "type": "radio",
+        "position": 0,
+        "kind": "RadioQuestion",
+        "options": [
+         {
+          "schemaNodeId": "cly97nblb08k807477fpo5htm",
+          "featureSchemaId": "cly97nblb08k70747hb814gu9",
+          "label": "Bulleted List",
+          "value": "bulleted_list",
+          "position": 0,
+          "kind": "RadioOption"
+         },
+         {
+          "schemaNodeId": "cly97nblb08ka074705joc3n5",
+          "featureSchemaId": "cly97nblb08k907476f6t1ted",
+          "label": "Numbered List",
+          "value": "numbered_list",
+          "position": 1,
+          "kind": "RadioOption"
+         },
+         {
+          "schemaNodeId": "cly97nblb08kc0747enqs425v",
+          "featureSchemaId": "cly97nblb08kb0747g7tq7t0f",
+          "label": "Pure Text",
+          "value": "pure_text",
+          "position": 2,
+          "kind": "RadioOption"
+         }
+        ]
+       }
+      ],
       "kind": "Rectangle"
      },
      {
@@ -1183,7 +1221,37 @@
       "tool": "rectangle",
       "color": "#9400b7",
       "archived": 0,
-      "classifications": [],
+      "classifications": [
+       {
+        "schemaNodeId": "cly97sgpv0ae60705g5b8aqkq",
+        "featureSchemaId": "cly97sgpv0ae10705e91s0o3d",
+        "archived": 0,
+        "required": false,
+        "instructions": "type",
+        "name": "type",
+        "type": "radio",
+        "position": 0,
+        "kind": "RadioQuestion",
+        "options": [
+         {
+          "schemaNodeId": "cly97sgpv0ae307057q8xe48a",
+          "featureSchemaId": "cly97sgpv0ae207051k5macsm",
+          "label": "Filled-or-not circle",
+          "value": "filled_or_not_circle",
+          "position": 0,
+          "kind": "RadioOption"
+         },
+         {
+          "schemaNodeId": "cly97sgpv0ae50705fu2p7uid",
+          "featureSchemaId": "cly97sgpv0ae407058qxm51yy",
+          "label": "Text with description",
+          "value": "text_with_description",
+          "position": 1,
+          "kind": "RadioOption"
+         }
+        ]
+       }
+      ],
       "kind": "Rectangle"
      },
      {
@@ -1418,19 +1486,11 @@
           "kind": "RadioOption"
          },
          {
-          "schemaNodeId": "clxvz6l0x06t707zp7zbc52yn",
-          "featureSchemaId": "clxvz6l0x06t607zpeo4z7ttw",
-          "label": "navigation icon",
-          "value": "navigation_icon",
-          "position": 3,
-          "kind": "RadioOption"
-         },
-         {
           "schemaNodeId": "clxvz6l0x06t907zp5c02bn94",
           "featureSchemaId": "clxvz6l0x06t807zp0dy0afsh",
           "label": "other",
           "value": "other",
-          "position": 4,
+          "position": 3,
           "kind": "RadioOption"
          }
         ]
@@ -1590,9 +1650,17 @@
          {
           "schemaNodeId": "cly6amw7i065c07xl8h500cyi",
           "featureSchemaId": "cly6amw7i065b07xl8ih54gyz",
-          "label": "form",
+          "label": "Form",
           "value": "1",
           "position": 0,
+          "kind": "RadioOption"
+         },
+         {
+          "schemaNodeId": "cly970zt409r2072042czfnf9",
+          "featureSchemaId": "cly970zt309r1072011bu48hy",
+          "label": "Table-like text",
+          "value": "table_like_text",
+          "position": 1,
           "kind": "RadioOption"
          }
         ]
@@ -1608,7 +1676,61 @@
       "tool": "rectangle",
       "color": "#de710b",
       "archived": 0,
-      "classifications": [],
+      "classifications": [
+       {
+        "schemaNodeId": "cly97xlvy0auj072270qo1kal",
+        "featureSchemaId": "cly97xlvy0au80722brbrffil",
+        "archived": 0,
+        "required": true,
+        "instructions": "sldier type",
+        "name": "sldier_type",
+        "type": "radio",
+        "position": 0,
+        "kind": "RadioQuestion",
+        "options": [
+         {
+          "schemaNodeId": "cly97xlvy0aua0722h2pzgdvf",
+          "featureSchemaId": "cly97xlvy0au907224bj4frs3",
+          "label": "page slider",
+          "value": "page_slider",
+          "position": 0,
+          "kind": "RadioOption"
+         },
+         {
+          "schemaNodeId": "cly97xlvy0auc0722e3ug858v",
+          "featureSchemaId": "cly97xlvy0aub072256zu0s4f",
+          "label": "progress slider",
+          "value": "progress_slider",
+          "position": 1,
+          "kind": "RadioOption"
+         },
+         {
+          "schemaNodeId": "cly97xlvy0aue072290tqd9kp",
+          "featureSchemaId": "cly97xlvy0aud07225fuv1ags",
+          "label": "input slider",
+          "value": "input_slider",
+          "position": 2,
+          "kind": "RadioOption"
+         },
+         {
+          "schemaNodeId": "cly97xlvy0aug0722g1ybb0yt",
+          "featureSchemaId": "cly97xlvy0auf0722191q8cd7",
+          "label": "range slider",
+          "value": "range_slider",
+          "position": 3,
+          "kind": "RadioOption"
+         },
+         {
+          "schemaNodeId": "cly97xlvy0aui0722feyf8ola",
+          "featureSchemaId": "cly97xlvy0auh07229dbj69fj",
+          "label": "other",
+          "value": "other",
+          "position": 4,
+          "kind": "RadioOption"
+         }
+        ]
+       }
+      ],
       "kind": "Rectangle"
      },
      {
@@ -1619,7 +1741,29 @@
       "tool": "rectangle",
       "color": "#9e7070",
       "archived": 0,
-      "classifications": [],
+      "classifications": [
+       {
+        "schemaNodeId": "cly9784qh0ak40722fsembtok",
+        "featureSchemaId": "cly9784qh0ak107223jymd0d9",
+        "archived": 0,
+        "required": false,
+        "instructions": "figure",
+        "name": "figure",
+        "type": "radio",
+        "position": 0,
+        "kind": "RadioQuestion",
+        "options": [
+         {
+          "schemaNodeId": "cly9784qh0ak30722agkx3x9w",
+          "featureSchemaId": "cly9784qh0ak207220p0if0xo",
+          "label": "It is a toggle",
+          "value": "toggle_button",
+          "position": 0,
+          "kind": "RadioOption"
+         }
+        ]
+       }
+      ],
       "kind": "Rectangle"
      }
     ],
