@@ -59,24 +59,6 @@
               "children": []
             },
             {
-              "name": "realism",
-              "children": [
-                {
-                  "name": "",
-                  "children": [
-                    {
-                      "name": "profile_photo",
-                      "children": []
-                    },
-                    {
-                      "name": "logo",
-                      "children": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
               "name": "template_placeholder",
               "children": [
                 {
@@ -115,18 +97,17 @@
                   ]
                 }
               ]
-            }
-          ]
-        },
-        {
-          "name": "testing",
-          "children": [
+            },
             {
-              "name": "a",
+              "name": "realistic_logo",
               "children": []
             },
             {
-              "name": "b",
+              "name": "realistic_profile_photo",
+              "children": []
+            },
+            {
+              "name": "realistic_custom",
               "children": []
             }
           ]
@@ -211,6 +192,62 @@
               "children": []
             }
           ]
+        },
+        {
+          "name": "explicit_text_type",
+          "children": [
+            {
+              "name": "label",
+              "children": []
+            },
+            {
+              "name": "paragraph",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "not_present",
+                      "children": []
+                    },
+                    {
+                      "name": "solid_thin",
+                      "children": []
+                    },
+                    {
+                      "name": "solid_thick",
+                      "children": []
+                    },
+                    {
+                      "name": "dashed",
+                      "children": []
+                    },
+                    {
+                      "name": "dotted",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "link",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "implicit_text_type",
+          "children": [
+            {
+              "name": "header",
+              "children": []
+            },
+            {
+              "name": "link",
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -272,66 +309,6 @@
       ]
     },
     {
-      "name": "Paragraph",
-      "children": [
-        {
-          "name": "drawing_style",
-          "children": [
-            {
-              "name": "line",
-              "children": []
-            },
-            {
-              "name": "squiggly_line",
-              "children": []
-            },
-            {
-              "name": "literals",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "border",
-          "children": [
-            {
-              "name": "not_present",
-              "children": []
-            },
-            {
-              "name": "solid_thin",
-              "children": []
-            },
-            {
-              "name": "solid_bold",
-              "children": []
-            },
-            {
-              "name": "dashed",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "text_alignment",
-          "children": [
-            {
-              "name": "left",
-              "children": []
-            },
-            {
-              "name": "center",
-              "children": []
-            },
-            {
-              "name": "right",
-              "children": []
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "Video",
       "children": []
     },
@@ -352,8 +329,16 @@
             {
               "name": "pure_text",
               "children": []
+            },
+            {
+              "name": "icon_list",
+              "children": []
             }
           ]
+        },
+        {
+          "name": "item_count",
+          "children": []
         }
       ]
     },
@@ -519,19 +504,6 @@
           ]
         },
         {
-          "name": "resizable",
-          "children": [
-            {
-              "name": "true",
-              "children": []
-            },
-            {
-              "name": "false",
-              "children": []
-            }
-          ]
-        },
-        {
           "name": "leading_icon",
           "children": [
             {
@@ -553,11 +525,24 @@
           "name": "type",
           "children": [
             {
-              "name": "filled_or_not_circle",
+              "name": "filled",
               "children": []
             },
             {
-              "name": "text_with_description",
+              "name": "not filled",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "text_label",
+          "children": [
+            {
+              "name": "present",
+              "children": []
+            },
+            {
+              "name": "not_present",
               "children": []
             }
           ]
@@ -657,7 +642,69 @@
           "children": [
             {
               "name": "action_icon",
-              "children": []
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "search",
+                      "children": []
+                    },
+                    {
+                      "name": "setting",
+                      "children": []
+                    },
+                    {
+                      "name": "home",
+                      "children": []
+                    },
+                    {
+                      "name": "back",
+                      "children": []
+                    },
+                    {
+                      "name": "forward",
+                      "children": []
+                    },
+                    {
+                      "name": "refresh",
+                      "children": []
+                    },
+                    {
+                      "name": "trash",
+                      "children": []
+                    },
+                    {
+                      "name": "edit",
+                      "children": []
+                    },
+                    {
+                      "name": "favorite",
+                      "children": []
+                    },
+                    {
+                      "name": "share",
+                      "children": []
+                    },
+                    {
+                      "name": "notification",
+                      "children": []
+                    },
+                    {
+                      "name": "user",
+                      "children": []
+                    },
+                    {
+                      "name": "hamburger",
+                      "children": []
+                    },
+                    {
+                      "name": "menu",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
             },
             {
               "name": "object_icon",
@@ -707,7 +754,51 @@
     },
     {
       "name": "Checkbox",
-      "children": []
+      "children": [
+        {
+          "name": "checkbox_state",
+          "children": [
+            {
+              "name": "checked",
+              "children": []
+            },
+            {
+              "name": "unchecked",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "shape",
+          "children": [
+            {
+              "name": "rectangle",
+              "children": []
+            },
+            {
+              "name": "square",
+              "children": []
+            },
+            {
+              "name": "custom",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "label_association",
+          "children": [
+            {
+              "name": "present",
+              "children": []
+            },
+            {
+              "name": "not_present",
+              "children": []
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Container",
@@ -746,6 +837,45 @@
               "children": []
             }
           ]
+        },
+        {
+          "name": "grid_structure",
+          "children": [
+            {
+              "name": "present",
+              "children": []
+            },
+            {
+              "name": "not_present",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "borders",
+          "children": [
+            {
+              "name": "present",
+              "children": []
+            },
+            {
+              "name": "not_present",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "header_text",
+          "children": [
+            {
+              "name": "present",
+              "children": []
+            },
+            {
+              "name": "not_present",
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -757,14 +887,6 @@
           "children": [
             {
               "name": "page_slider",
-              "children": []
-            },
-            {
-              "name": "progress_slider",
-              "children": []
-            },
-            {
-              "name": "input_slider",
               "children": []
             },
             {
