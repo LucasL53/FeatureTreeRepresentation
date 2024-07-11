@@ -105,10 +105,6 @@
           ]
         },
         {
-          "name": "font_style",
-          "children": []
-        },
-        {
           "name": "text_alignment",
           "children": [
             {
@@ -142,6 +138,18 @@
             },
             {
               "name": "strike",
+              "children": []
+            },
+            {
+              "name": "bubbly",
+              "children": []
+            },
+            {
+              "name": "serif",
+              "children": []
+            },
+            {
+              "name": "custom",
               "children": []
             }
           ]
@@ -218,6 +226,15 @@
               "children": []
             }
           ]
+        },
+        {
+          "name": "is_colored",
+          "children": [
+            {
+              "name": "true",
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -266,6 +283,15 @@
               "children": []
             }
           ]
+        },
+        {
+          "name": "is_colored",
+          "children": [
+            {
+              "name": "true",
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -294,112 +320,10 @@
           ]
         },
         {
-          "name": "indentation",
+          "name": "is_colored",
           "children": [
             {
-              "name": "none",
-              "children": []
-            },
-            {
-              "name": "single_level",
-              "children": []
-            },
-            {
-              "name": "multi_level",
-              "children": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Stepper",
-      "children": [
-        {
-          "name": "state",
-          "children": [
-            {
-              "name": "unstarted",
-              "children": []
-            },
-            {
-              "name": "partial",
-              "children": []
-            },
-            {
-              "name": "complete",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "step_break",
-          "children": [
-            {
-              "name": "line",
-              "children": []
-            },
-            {
-              "name": "continuous",
-              "children": []
-            },
-            {
-              "name": "dashed_line",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "label",
-          "children": [
-            {
-              "name": "contained",
-              "children": []
-            },
-            {
-              "name": "above",
-              "children": []
-            },
-            {
-              "name": "below",
-              "children": []
-            },
-            {
-              "name": "not_present",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "shape",
-          "children": [
-            {
-              "name": "circle",
-              "children": []
-            },
-            {
-              "name": "square",
-              "children": []
-            },
-            {
-              "name": "rounded_square",
-              "children": []
-            },
-            {
-              "name": "arrow",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "orientation",
-          "children": [
-            {
-              "name": "vertical",
-              "children": []
-            },
-            {
-              "name": "horizontal",
+              "name": "true",
               "children": []
             }
           ]
@@ -423,27 +347,6 @@
           ]
         },
         {
-          "name": "input_category",
-          "children": [
-            {
-              "name": "authentication",
-              "children": []
-            },
-            {
-              "name": "search_queries",
-              "children": []
-            },
-            {
-              "name": "payment_information",
-              "children": []
-            },
-            {
-              "name": "general_input",
-              "children": []
-            }
-          ]
-        },
-        {
           "name": "hint_text",
           "children": [
             {
@@ -460,11 +363,15 @@
           "name": "shape",
           "children": [
             {
-              "name": "rounded_square",
+              "name": "rounded_rectangle",
               "children": []
             },
             {
-              "name": "sharp_square",
+              "name": "rectangle",
+              "children": []
+            },
+            {
+              "name": "oval",
               "children": []
             }
           ]
@@ -473,11 +380,20 @@
           "name": "leading_icon",
           "children": [
             {
-              "name": "present",
+              "name": "leading_icon",
               "children": []
             },
             {
-              "name": "not_present",
+              "name": "trailing_icon",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "is_colored",
+          "children": [
+            {
+              "name": "true",
               "children": []
             }
           ]
@@ -512,88 +428,12 @@
               "children": []
             }
           ]
-        }
-      ]
-    },
-    {
-      "name": "Button",
-      "children": [
-        {
-          "name": "button_type",
-          "children": [
-            {
-              "name": "primary",
-              "children": []
-            },
-            {
-              "name": "secondary",
-              "children": []
-            },
-            {
-              "name": "tertiary",
-              "children": []
-            },
-            {
-              "name": "icon",
-              "children": []
-            }
-          ]
         },
         {
-          "name": "button_shape",
+          "name": "is_colored",
           "children": [
             {
-              "name": "rounded_rectangle",
-              "children": []
-            },
-            {
-              "name": "rectangle",
-              "children": []
-            },
-            {
-              "name": "circle",
-              "children": []
-            },
-            {
-              "name": "custom",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "size",
-          "children": [
-            {
-              "name": "small",
-              "children": []
-            },
-            {
-              "name": "medium",
-              "children": []
-            },
-            {
-              "name": "large",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "state",
-          "children": [
-            {
-              "name": "default",
-              "children": []
-            },
-            {
-              "name": "disabled",
-              "children": []
-            },
-            {
-              "name": "hover",
-              "children": []
-            },
-            {
-              "name": "active_pressed",
+              "name": "true",
               "children": []
             }
           ]
@@ -707,6 +547,15 @@
               "children": []
             }
           ]
+        },
+        {
+          "name": "is_colored",
+          "children": [
+            {
+              "name": "true",
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -723,79 +572,31 @@
             {
               "name": "line_break",
               "children": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Table",
-      "children": [
-        {
-          "name": "1",
-          "children": [
-            {
-              "name": "form",
-              "children": []
             },
             {
-              "name": "table_like_text",
+              "name": "screen",
               "children": []
             }
           ]
         },
         {
-          "name": "grid_structure",
+          "name": "display_type",
           "children": [
             {
-              "name": "present",
+              "name": "implicit",
               "children": []
             },
             {
-              "name": "not_present",
+              "name": "explicit",
               "children": []
             }
           ]
         },
         {
-          "name": "borders",
+          "name": "is_color_filled",
           "children": [
             {
-              "name": "present",
-              "children": []
-            },
-            {
-              "name": "not_present",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "header_text",
-          "children": [
-            {
-              "name": "present",
-              "children": []
-            },
-            {
-              "name": "not_present",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "cell_alignment",
-          "children": [
-            {
-              "name": "left",
-              "children": []
-            },
-            {
-              "name": "right",
-              "children": []
-            },
-            {
-              "name": "center",
+              "name": "true",
               "children": []
             }
           ]
@@ -805,23 +606,6 @@
     {
       "name": "Slider",
       "children": [
-        {
-          "name": "sldier_type",
-          "children": [
-            {
-              "name": "page_slider",
-              "children": []
-            },
-            {
-              "name": "range_slider",
-              "children": []
-            },
-            {
-              "name": "other",
-              "children": []
-            }
-          ]
-        },
         {
           "name": "slider_handle",
           "children": [
@@ -838,21 +622,51 @@
               "children": []
             }
           ]
+        },
+        {
+          "name": "slider_orientation",
+          "children": [
+            {
+              "name": "vertical",
+              "children": []
+            },
+            {
+              "name": "horizontal",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "slider_type",
+          "children": [
+            {
+              "name": "page_slider",
+              "children": []
+            },
+            {
+              "name": "range_slider",
+              "children": []
+            },
+            {
+              "name": "other",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "is_colored",
+          "children": [
+            {
+              "name": "true",
+              "children": []
+            }
+          ]
         }
       ]
     },
     {
       "name": "Toggle",
       "children": [
-        {
-          "name": "figure",
-          "children": [
-            {
-              "name": "toggle_button",
-              "children": []
-            }
-          ]
-        },
         {
           "name": "state",
           "children": [
@@ -867,22 +681,10 @@
           ]
         },
         {
-          "name": "label_position",
+          "name": "is_colored",
           "children": [
             {
-              "name": "left",
-              "children": []
-            },
-            {
-              "name": "right",
-              "children": []
-            },
-            {
-              "name": "top",
-              "children": []
-            },
-            {
-              "name": "bottom",
+              "name": "true",
               "children": []
             }
           ]
