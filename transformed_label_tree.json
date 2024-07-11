@@ -55,59 +55,29 @@
           "name": "content",
           "children": [
             {
-              "name": "text",
-              "children": []
-            },
-            {
-              "name": "template_placeholder",
+              "name": "placeholder",
               "children": [
                 {
                   "name": "",
                   "children": [
                     {
-                      "name": "profile_photo",
+                      "name": "symbols",
                       "children": []
                     },
                     {
-                      "name": "x",
+                      "name": "text",
                       "children": []
-                    },
-                    {
-                      "name": "mountain_sun",
-                      "children": []
-                    },
-                    {
-                      "name": "custom",
-                      "children": [
-                        {
-                          "name": "",
-                          "children": [
-                            {
-                              "name": "representative",
-                              "children": []
-                            },
-                            {
-                              "name": "abstract",
-                              "children": []
-                            }
-                          ]
-                        }
-                      ]
                     }
                   ]
                 }
               ]
             },
             {
-              "name": "realistic_logo",
+              "name": "notional",
               "children": []
             },
             {
-              "name": "realistic_profile_photo",
-              "children": []
-            },
-            {
-              "name": "realistic_custom",
+              "name": "detailed",
               "children": []
             }
           ]
@@ -131,29 +101,16 @@
             {
               "name": "literals",
               "children": []
+            },
+            {
+              "name": "x",
+              "children": []
             }
           ]
         },
         {
           "name": "font_style",
           "children": []
-        },
-        {
-          "name": "font_size",
-          "children": [
-            {
-              "name": "small",
-              "children": []
-            },
-            {
-              "name": "medium",
-              "children": []
-            },
-            {
-              "name": "large",
-              "children": []
-            }
-          ]
         },
         {
           "name": "text_alignment",
@@ -197,10 +154,6 @@
           "name": "explicit_text_type",
           "children": [
             {
-              "name": "label",
-              "children": []
-            },
-            {
               "name": "paragraph",
               "children": [
                 {
@@ -231,20 +184,41 @@
               ]
             },
             {
-              "name": "link",
+              "name": "header",
+              "children": []
+            },
+            {
+              "name": "label",
               "children": []
             }
           ]
         },
         {
-          "name": "implicit_text_type",
+          "name": "text_type_representation",
           "children": [
             {
-              "name": "header",
+              "name": "implicit",
               "children": []
             },
             {
-              "name": "link",
+              "name": "explicit",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "link_type",
+          "children": [
+            {
+              "name": "implicit",
+              "children": []
+            },
+            {
+              "name": "explicit",
+              "children": []
+            },
+            {
+              "name": "none",
               "children": []
             }
           ]
@@ -255,32 +229,6 @@
       "name": "Dropdown",
       "children": [
         {
-          "name": "content",
-          "children": [
-            {
-              "name": "selected",
-              "children": []
-            },
-            {
-              "name": "not_selected",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "selection",
-          "children": [
-            {
-              "name": "single_select",
-              "children": []
-            },
-            {
-              "name": "multi_select",
-              "children": []
-            }
-          ]
-        },
-        {
           "name": "shape",
           "children": [
             {
@@ -289,6 +237,10 @@
             },
             {
               "name": "rounded_rectangle",
+              "children": []
+            },
+            {
+              "name": "borderless",
               "children": []
             }
           ]
@@ -305,12 +257,21 @@
               "children": []
             }
           ]
+        },
+        {
+          "name": "content",
+          "children": [
+            {
+              "name": "text",
+              "children": []
+            },
+            {
+              "name": "triangle",
+              "children": []
+            }
+          ]
         }
       ]
-    },
-    {
-      "name": "Video",
-      "children": []
     },
     {
       "name": "List",
@@ -337,8 +298,21 @@
           ]
         },
         {
-          "name": "item_count",
-          "children": []
+          "name": "indentation",
+          "children": [
+            {
+              "name": "none",
+              "children": []
+            },
+            {
+              "name": "single_level",
+              "children": []
+            },
+            {
+              "name": "multi_level",
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -435,10 +409,6 @@
           ]
         }
       ]
-    },
-    {
-      "name": "Date Picker",
-      "children": []
     },
     {
       "name": "Text Input",
@@ -638,68 +608,46 @@
       "name": "Icon",
       "children": [
         {
-          "name": "type",
+          "name": "color",
           "children": [
             {
-              "name": "action_icon",
+              "name": "true",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "interactable",
+          "children": [
+            {
+              "name": "implicit",
+              "children": []
+            },
+            {
+              "name": "explicit",
+              "children": []
+            },
+            {
+              "name": "none",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "content",
+          "children": [
+            {
+              "name": "placeholder",
               "children": [
                 {
                   "name": "",
                   "children": [
                     {
-                      "name": "search",
+                      "name": "symbol",
                       "children": []
                     },
                     {
-                      "name": "setting",
-                      "children": []
-                    },
-                    {
-                      "name": "home",
-                      "children": []
-                    },
-                    {
-                      "name": "back",
-                      "children": []
-                    },
-                    {
-                      "name": "forward",
-                      "children": []
-                    },
-                    {
-                      "name": "refresh",
-                      "children": []
-                    },
-                    {
-                      "name": "trash",
-                      "children": []
-                    },
-                    {
-                      "name": "edit",
-                      "children": []
-                    },
-                    {
-                      "name": "favorite",
-                      "children": []
-                    },
-                    {
-                      "name": "share",
-                      "children": []
-                    },
-                    {
-                      "name": "notification",
-                      "children": []
-                    },
-                    {
-                      "name": "user",
-                      "children": []
-                    },
-                    {
-                      "name": "hamburger",
-                      "children": []
-                    },
-                    {
-                      "name": "menu",
+                      "name": "text",
                       "children": []
                     }
                   ]
@@ -707,45 +655,11 @@
               ]
             },
             {
-              "name": "object_icon",
+              "name": "notional",
               "children": []
             },
             {
-              "name": "status_icon",
-              "children": []
-            },
-            {
-              "name": "other",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "size",
-          "children": [
-            {
-              "name": "small",
-              "children": []
-            },
-            {
-              "name": "medium",
-              "children": []
-            },
-            {
-              "name": "large",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "color",
-          "children": [
-            {
-              "name": "representative",
-              "children": []
-            },
-            {
-              "name": "monochromatic",
+              "name": "detailed",
               "children": []
             }
           ]
@@ -819,17 +733,13 @@
       ]
     },
     {
-      "name": "Rating",
-      "children": []
-    },
-    {
       "name": "Table",
       "children": [
         {
           "name": "1",
           "children": [
             {
-              "name": "1",
+              "name": "form",
               "children": []
             },
             {
@@ -876,6 +786,23 @@
               "children": []
             }
           ]
+        },
+        {
+          "name": "cell_alignment",
+          "children": [
+            {
+              "name": "left",
+              "children": []
+            },
+            {
+              "name": "right",
+              "children": []
+            },
+            {
+              "name": "center",
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -898,6 +825,23 @@
               "children": []
             }
           ]
+        },
+        {
+          "name": "slider_handle",
+          "children": [
+            {
+              "name": "circle",
+              "children": []
+            },
+            {
+              "name": "rectangle",
+              "children": []
+            },
+            {
+              "name": "custom",
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -909,6 +853,40 @@
           "children": [
             {
               "name": "toggle_button",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "state",
+          "children": [
+            {
+              "name": "on",
+              "children": []
+            },
+            {
+              "name": "off",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "label_position",
+          "children": [
+            {
+              "name": "left",
+              "children": []
+            },
+            {
+              "name": "right",
+              "children": []
+            },
+            {
+              "name": "top",
+              "children": []
+            },
+            {
+              "name": "bottom",
               "children": []
             }
           ]
