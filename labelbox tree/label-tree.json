@@ -90,26 +90,19 @@
         "featureSchemaId": "clxuv2pol06a6072sgcwsdz3a",
         "archived": 0,
         "required": false,
-        "instructions": "color",
+        "instructions": "is_colored",
         "name": "color",
         "type": "radio",
+        "uiMode": "hotkey",
         "position": 2,
         "kind": "RadioQuestion",
         "options": [
          {
-          "schemaNodeId": "clxuv2pol06a8072sdabq4dfg",
-          "featureSchemaId": "clxuv2pol06a7072s7tle2erh",
-          "label": "RGB",
-          "value": "rgb",
+          "schemaNodeId": "clyhndm9f007707yb3kae29lv",
+          "featureSchemaId": "clyhndm9f007607yb94rghsfn",
+          "label": "true",
+          "value": "true",
           "position": 0,
-          "kind": "RadioOption"
-         },
-         {
-          "schemaNodeId": "clxuv2pol06aa072s66w73bgg",
-          "featureSchemaId": "clxuv2pol06a9072s4xu8gavj",
-          "label": "grayscale",
-          "value": "grayscale",
-          "position": 1,
           "kind": "RadioOption"
          }
         ]

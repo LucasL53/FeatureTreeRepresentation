@@ -42,11 +42,7 @@
           "name": "color",
           "children": [
             {
-              "name": "rgb",
-              "children": []
-            },
-            {
-              "name": "grayscale",
+              "name": "true",
               "children": []
             }
           ]
