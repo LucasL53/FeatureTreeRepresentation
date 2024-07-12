@@ -101,6 +101,10 @@
             {
               "name": "x",
               "children": []
+            },
+            {
+              "name": "rectangle",
+              "children": []
             }
           ]
         },
@@ -184,28 +188,42 @@
                       "children": []
                     }
                   ]
+                },
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "implicit",
+                      "children": []
+                    },
+                    {
+                      "name": "explicit",
+                      "children": []
+                    }
+                  ]
                 }
               ]
             },
             {
               "name": "header",
-              "children": []
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "implicit",
+                      "children": []
+                    },
+                    {
+                      "name": "explicit",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
             },
             {
               "name": "label",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "text_type_representation",
-          "children": [
-            {
-              "name": "implicit",
-              "children": []
-            },
-            {
-              "name": "explicit",
               "children": []
             }
           ]
@@ -232,6 +250,35 @@
           "children": [
             {
               "name": "true",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "representation",
+          "children": [
+            {
+              "name": "x",
+              "children": []
+            },
+            {
+              "name": "line",
+              "children": []
+            },
+            {
+              "name": "squiggly",
+              "children": []
+            },
+            {
+              "name": "literal",
+              "children": []
+            },
+            {
+              "name": "bounding_box",
+              "children": []
+            },
+            {
+              "name": "dots",
               "children": []
             }
           ]
@@ -401,46 +448,6 @@
       ]
     },
     {
-      "name": "Radio Button",
-      "children": [
-        {
-          "name": "type",
-          "children": [
-            {
-              "name": "filled",
-              "children": []
-            },
-            {
-              "name": "not filled",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "text_label",
-          "children": [
-            {
-              "name": "present",
-              "children": []
-            },
-            {
-              "name": "not_present",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "is_colored",
-          "children": [
-            {
-              "name": "true",
-              "children": []
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "Icon",
       "children": [
         {
@@ -491,69 +498,114 @@
               ]
             },
             {
-              "name": "notional",
-              "children": []
-            },
-            {
               "name": "detailed",
-              "children": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Checkbox",
-      "children": [
-        {
-          "name": "checkbox_state",
-          "children": [
-            {
-              "name": "checked",
-              "children": []
-            },
-            {
-              "name": "unchecked",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "shape",
-          "children": [
-            {
-              "name": "rectangle",
-              "children": []
-            },
-            {
-              "name": "square",
-              "children": []
-            },
-            {
-              "name": "custom",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "label_association",
-          "children": [
-            {
-              "name": "present",
-              "children": []
-            },
-            {
-              "name": "not_present",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "is_colored",
-          "children": [
-            {
-              "name": "true",
-              "children": []
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "magnifying_glass",
+                      "children": []
+                    },
+                    {
+                      "name": "hamburger_menu",
+                      "children": []
+                    },
+                    {
+                      "name": "triple_dotted_menu",
+                      "children": []
+                    },
+                    {
+                      "name": "graduation_cap",
+                      "children": []
+                    },
+                    {
+                      "name": "moon",
+                      "children": []
+                    },
+                    {
+                      "name": "pencil",
+                      "children": []
+                    },
+                    {
+                      "name": "star",
+                      "children": []
+                    },
+                    {
+                      "name": "heart",
+                      "children": []
+                    },
+                    {
+                      "name": "leaf",
+                      "children": []
+                    },
+                    {
+                      "name": "paw",
+                      "children": []
+                    },
+                    {
+                      "name": "speech_bubble",
+                      "children": []
+                    },
+                    {
+                      "name": "microphone",
+                      "children": []
+                    },
+                    {
+                      "name": "camera",
+                      "children": []
+                    },
+                    {
+                      "name": "mail",
+                      "children": []
+                    },
+                    {
+                      "name": "grid_menu",
+                      "children": []
+                    },
+                    {
+                      "name": "smiley",
+                      "children": []
+                    },
+                    {
+                      "name": "checkbox",
+                      "children": []
+                    },
+                    {
+                      "name": "radio_button",
+                      "children": []
+                    },
+                    {
+                      "name": "toggle",
+                      "children": []
+                    },
+                    {
+                      "name": "thumbs_up",
+                      "children": []
+                    },
+                    {
+                      "name": "cursor",
+                      "children": []
+                    },
+                    {
+                      "name": "profile",
+                      "children": []
+                    },
+                    {
+                      "name": "input_indicator",
+                      "children": []
+                    },
+                    {
+                      "name": "slash",
+                      "children": []
+                    },
+                    {
+                      "name": "dropdown",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -574,8 +626,22 @@
               "children": []
             },
             {
-              "name": "screen",
-              "children": []
+              "name": "button",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "implicit",
+                      "children": []
+                    },
+                    {
+                      "name": "explicit",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -649,33 +715,6 @@
             },
             {
               "name": "other",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "is_colored",
-          "children": [
-            {
-              "name": "true",
-              "children": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Toggle",
-      "children": [
-        {
-          "name": "state",
-          "children": [
-            {
-              "name": "on",
-              "children": []
-            },
-            {
-              "name": "off",
               "children": []
             }
           ]
