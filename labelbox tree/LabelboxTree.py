@@ -8,7 +8,7 @@ with open('labelbox tree/label-tree.json', 'r') as file:
 def transform_data(data):
     def process_tool(tool):
         node = {
-            "name": tool["name"],
+            "name": tool["name"],   
             "children": []
         }
         for classification in tool["classifications"]:

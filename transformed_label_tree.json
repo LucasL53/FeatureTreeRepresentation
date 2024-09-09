@@ -2,6 +2,155 @@
   "name": "Root",
   "children": [
     {
+      "name": "Text",
+      "children": [
+        {
+          "name": "representation",
+          "children": [
+            {
+              "name": "x",
+              "children": []
+            },
+            {
+              "name": "line",
+              "children": []
+            },
+            {
+              "name": "squiggly",
+              "children": []
+            },
+            {
+              "name": "bounding_box",
+              "children": []
+            },
+            {
+              "name": "dots",
+              "children": []
+            },
+            {
+              "name": "literals",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "text_type",
+          "children": [
+            {
+              "name": "paragraph",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "borderless",
+                      "children": []
+                    },
+                    {
+                      "name": "solid",
+                      "children": []
+                    },
+                    {
+                      "name": "dashed",
+                      "children": []
+                    },
+                    {
+                      "name": "dotted",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "header",
+              "children": []
+            },
+            {
+              "name": "label",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "interactable",
+          "children": [
+            {
+              "name": "implicit",
+              "children": []
+            },
+            {
+              "name": "explicit",
+              "children": []
+            },
+            {
+              "name": "none",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "is_colored",
+          "children": [
+            {
+              "name": "true",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "text_style",
+          "children": [
+            {
+              "name": "bold",
+              "children": []
+            },
+            {
+              "name": "italicized",
+              "children": []
+            },
+            {
+              "name": "underlined",
+              "children": []
+            },
+            {
+              "name": "strike",
+              "children": []
+            },
+            {
+              "name": "bubbly",
+              "children": []
+            },
+            {
+              "name": "serif",
+              "children": []
+            },
+            {
+              "name": "custom",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "text_alignment",
+          "children": [
+            {
+              "name": "left",
+              "children": []
+            },
+            {
+              "name": "right",
+              "children": []
+            },
+            {
+              "name": "center",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Image",
       "children": [
         {
@@ -63,6 +212,10 @@
                     {
                       "name": "text",
                       "children": []
+                    },
+                    {
+                      "name": "none",
+                      "children": []
                     }
                   ]
                 }
@@ -81,7 +234,259 @@
       ]
     },
     {
-      "name": "Text",
+      "name": "Icon",
+      "children": [
+        {
+          "name": "color",
+          "children": [
+            {
+              "name": "true",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "interactable",
+          "children": [
+            {
+              "name": "implicit",
+              "children": []
+            },
+            {
+              "name": "explicit",
+              "children": []
+            },
+            {
+              "name": "none",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "content",
+          "children": [
+            {
+              "name": "placeholder",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "symbol",
+                      "children": []
+                    },
+                    {
+                      "name": "text",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "detailed",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "magnifying_glass",
+                      "children": []
+                    },
+                    {
+                      "name": "hamburger_menu",
+                      "children": []
+                    },
+                    {
+                      "name": "triple_dotted_menu",
+                      "children": []
+                    },
+                    {
+                      "name": "graduation_cap",
+                      "children": []
+                    },
+                    {
+                      "name": "moon",
+                      "children": []
+                    },
+                    {
+                      "name": "pencil",
+                      "children": []
+                    },
+                    {
+                      "name": "star",
+                      "children": []
+                    },
+                    {
+                      "name": "heart",
+                      "children": []
+                    },
+                    {
+                      "name": "leaf",
+                      "children": []
+                    },
+                    {
+                      "name": "paw",
+                      "children": []
+                    },
+                    {
+                      "name": "speech_bubble",
+                      "children": []
+                    },
+                    {
+                      "name": "microphone",
+                      "children": []
+                    },
+                    {
+                      "name": "camera",
+                      "children": []
+                    },
+                    {
+                      "name": "mail",
+                      "children": []
+                    },
+                    {
+                      "name": "grid_menu",
+                      "children": []
+                    },
+                    {
+                      "name": "smiley",
+                      "children": []
+                    },
+                    {
+                      "name": "checkbox",
+                      "children": []
+                    },
+                    {
+                      "name": "radio_button",
+                      "children": []
+                    },
+                    {
+                      "name": "toggle",
+                      "children": []
+                    },
+                    {
+                      "name": "thumbs_up",
+                      "children": []
+                    },
+                    {
+                      "name": "cursor",
+                      "children": []
+                    },
+                    {
+                      "name": "profile",
+                      "children": []
+                    },
+                    {
+                      "name": "input_indicator",
+                      "children": []
+                    },
+                    {
+                      "name": "slash",
+                      "children": []
+                    },
+                    {
+                      "name": "triangle",
+                      "children": []
+                    },
+                    {
+                      "name": "other",
+                      "children": []
+                    },
+                    {
+                      "name": "list_bullet",
+                      "children": []
+                    },
+                    {
+                      "name": "arrow",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Container",
+      "children": [
+        {
+          "name": "representation",
+          "children": [
+            {
+              "name": "card",
+              "children": []
+            },
+            {
+              "name": "line_break",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "dotted",
+                      "children": []
+                    },
+                    {
+                      "name": "dashed",
+                      "children": []
+                    },
+                    {
+                      "name": "solid",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "button",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "implicit",
+                      "children": []
+                    },
+                    {
+                      "name": "explicit",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "display_type",
+          "children": [
+            {
+              "name": "implicit",
+              "children": []
+            },
+            {
+              "name": "explicit",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "is_color_filled",
+          "children": [
+            {
+              "name": "true",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "archived",
       "children": [
         {
           "name": "style",
@@ -286,6 +691,76 @@
       ]
     },
     {
+      "name": "Text Input",
+      "children": [
+        {
+          "name": "input_size",
+          "children": [
+            {
+              "name": "single_line_input",
+              "children": []
+            },
+            {
+              "name": "multi_line_input",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "hint_text",
+          "children": [
+            {
+              "name": "present",
+              "children": []
+            },
+            {
+              "name": "not_present",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "shape",
+          "children": [
+            {
+              "name": "rounded_rectangle",
+              "children": []
+            },
+            {
+              "name": "rectangle",
+              "children": []
+            },
+            {
+              "name": "oval",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "leading_icon",
+          "children": [
+            {
+              "name": "leading_icon",
+              "children": []
+            },
+            {
+              "name": "trailing_icon",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "is_colored",
+          "children": [
+            {
+              "name": "true",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Dropdown",
       "children": [
         {
@@ -363,112 +838,6 @@
             {
               "name": "icon_list",
               "children": []
-            }
-          ]
-        },
-        {
-          "name": "is_colored",
-          "children": [
-            {
-              "name": "true",
-              "children": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Text Input",
-      "children": [
-        {
-          "name": "input_size",
-          "children": [
-            {
-              "name": "single_line_input",
-              "children": []
-            },
-            {
-              "name": "multi_line_input",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "hint_text",
-          "children": [
-            {
-              "name": "present",
-              "children": []
-            },
-            {
-              "name": "not_present",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "shape",
-          "children": [
-            {
-              "name": "rounded_rectangle",
-              "children": []
-            },
-            {
-              "name": "rectangle",
-              "children": []
-            },
-            {
-              "name": "oval",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "leading_icon",
-          "children": [
-            {
-              "name": "leading_icon",
-              "children": []
-            },
-            {
-              "name": "trailing_icon",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "is_colored",
-          "children": [
-            {
-              "name": "true",
-              "children": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Icon",
-      "children": [
-        {
-          "name": "color",
-          "children": [
-            {
-              "name": "true",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "interactable",
-          "children": [
-            {
-              "name": "implicit",
-              "children": []
-            },
-            {
-              "name": "explicit",
-              "children": []
             },
             {
               "name": "none",
@@ -477,189 +846,7 @@
           ]
         },
         {
-          "name": "content",
-          "children": [
-            {
-              "name": "placeholder",
-              "children": [
-                {
-                  "name": "",
-                  "children": [
-                    {
-                      "name": "symbol",
-                      "children": []
-                    },
-                    {
-                      "name": "text",
-                      "children": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "detailed",
-              "children": [
-                {
-                  "name": "",
-                  "children": [
-                    {
-                      "name": "magnifying_glass",
-                      "children": []
-                    },
-                    {
-                      "name": "hamburger_menu",
-                      "children": []
-                    },
-                    {
-                      "name": "triple_dotted_menu",
-                      "children": []
-                    },
-                    {
-                      "name": "graduation_cap",
-                      "children": []
-                    },
-                    {
-                      "name": "moon",
-                      "children": []
-                    },
-                    {
-                      "name": "pencil",
-                      "children": []
-                    },
-                    {
-                      "name": "star",
-                      "children": []
-                    },
-                    {
-                      "name": "heart",
-                      "children": []
-                    },
-                    {
-                      "name": "leaf",
-                      "children": []
-                    },
-                    {
-                      "name": "paw",
-                      "children": []
-                    },
-                    {
-                      "name": "speech_bubble",
-                      "children": []
-                    },
-                    {
-                      "name": "microphone",
-                      "children": []
-                    },
-                    {
-                      "name": "camera",
-                      "children": []
-                    },
-                    {
-                      "name": "mail",
-                      "children": []
-                    },
-                    {
-                      "name": "grid_menu",
-                      "children": []
-                    },
-                    {
-                      "name": "smiley",
-                      "children": []
-                    },
-                    {
-                      "name": "checkbox",
-                      "children": []
-                    },
-                    {
-                      "name": "radio_button",
-                      "children": []
-                    },
-                    {
-                      "name": "toggle",
-                      "children": []
-                    },
-                    {
-                      "name": "thumbs_up",
-                      "children": []
-                    },
-                    {
-                      "name": "cursor",
-                      "children": []
-                    },
-                    {
-                      "name": "profile",
-                      "children": []
-                    },
-                    {
-                      "name": "input_indicator",
-                      "children": []
-                    },
-                    {
-                      "name": "slash",
-                      "children": []
-                    },
-                    {
-                      "name": "dropdown",
-                      "children": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Container",
-      "children": [
-        {
-          "name": "representation",
-          "children": [
-            {
-              "name": "card",
-              "children": []
-            },
-            {
-              "name": "line_break",
-              "children": []
-            },
-            {
-              "name": "button",
-              "children": [
-                {
-                  "name": "",
-                  "children": [
-                    {
-                      "name": "implicit",
-                      "children": []
-                    },
-                    {
-                      "name": "explicit",
-                      "children": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "display_type",
-          "children": [
-            {
-              "name": "implicit",
-              "children": []
-            },
-            {
-              "name": "explicit",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "is_color_filled",
+          "name": "is_colored",
           "children": [
             {
               "name": "true",
